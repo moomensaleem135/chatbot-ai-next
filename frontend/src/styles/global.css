@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary */
+    --primary: 222 84% 53%; /* #2563EB */
+    --primary-dark: 221 83% 40%; /* #1E40AF */
+    --primary-light: 213 94% 68%; /* #60A5FA */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+
+    /* Secondary */
+    --secondary: 220 9% 35%; /* #4B5563 */
+    --secondary-dark: 215 28% 17%; /* #1F2937 */
+    --secondary-light: 220 8% 65%; /* #9CA3AF */
+    --secondary-foreground: 0 0% 100%; /* White text on secondary */
+
+    /* Background */
+    --background: 0 0% 100%; /* #FFFFFF */
+    --background-dark: 0 0% 100%; /* Not used in light mode */
+    --background-chat: 220 14% 96%; /* #F3F4F6 */
+
+    /* Message */
+    --message-user: 214 32% 91%; /* #E2E8F0 */
+    --message-assistant: 0 0% 100%; /* #FFFFFF */
+    --message-system: 43 96% 89%; /* #FEF3C7 */
+
+    /* Border */
+    --border: 220 13% 91%; /* #E5E7EB */
+    --border-dark: 220 13% 91%; /* Same in light mode */
+
+    /* Success */
+    --success: 160 84% 39%; /* #10B981 */
+    --success-light: 156 64% 95%; /* #D1FAE5 */
+    --success-foreground: 0 0% 100%; /* White text on success */
+
+    /* Error */
+    --error: 0 84% 60%; /* #EF4444 */
+    --error-light: 0 86% 97%; /* #FEE2E2 */
+    --error-foreground: 0 0% 100%; /* White text on error */
+
+    /* Warning */
+    --warning: 35 92% 50%; /* #F59E0B */
+    --warning-light: 43 96% 89%; /* #FEF3C7 */
+    --warning-foreground: 0 0% 0%; /* Black text on warning */
+
+    /* Text */
+    --text: 222 47% 11%; /* #111827 */
+    --text-secondary: 220 9% 46%; /* #6B7280 */
+    --text-light: 220 8% 65%; /* #9CA3AF */
+    --text-white: 0 0% 100%; /* #FFFFFF */
+  }
+
+  .dark {
+    /* Primary - slightly adjusted for dark mode */
+    --primary: 213 94% 68%; /* #60A5FA - brighter in dark mode */
+    --primary-dark: 222 84% 53%; /* #2563EB */
+    --primary-light: 213 94% 78%; /* Lighter version */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+
+    /* Secondary */
+    --secondary: 220 8% 65%; /* #9CA3AF - lighter in dark mode */
+    --secondary-dark: 220 9% 35%; /* #4B5563 */
+    --secondary-light: 220 8% 75%; /* Lighter version */
+    --secondary-foreground: 0 0% 0%; /* Black text on secondary */
+
+    /* Background */
+    --background: 222 47% 11%; /* #111827 */
+    --background-dark: 222 47% 8%; /* Darker version */
+    --background-chat: 215 28% 17%; /* #1F2937 */
+
+    /* Message */
+    --message-user: 215 28% 17%; /* #1F2937 */
+    --message-assistant: 222 47% 14%; /* Slightly lighter than background */
+    --message-system: 36 100% 10%; /* Dark amber */
+
+    /* Border */
+    --border: 215 25% 27%; /* #374151 */
+    --border-dark: 215 25% 17%; /* Darker version */
+
+    /* Success */
+    --success: 160 84% 39%; /* #10B981 */
+    --success-light: 160 84% 15%; /* Darker green */
+    --success-foreground: 0 0% 100%; /* White text on success */
+
+    /* Error */
+    --error: 0 84% 60%; /* #EF4444 */
+    --error-light: 0 84% 20%; /* Darker red */
+    --error-foreground: 0 0% 100%; /* White text on error */
+
+    /* Warning */
+    --warning: 35 92% 50%; /* #F59E0B */
+    --warning-light: 35 92% 20%; /* Darker amber */
+    --warning-foreground: 0 0% 0%; /* Black text on warning */
+
+    /* Text */
+    --text: 0 0% 100%; /* #FFFFFF */
+    --text-secondary: 220 8% 65%; /* #9CA3AF */
+    --text-light: 220 9% 46%; /* #6B7280 */
+    --text-white: 0 0% 100%; /* #FFFFFF */
+  }
+}
