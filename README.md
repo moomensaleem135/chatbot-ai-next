@@ -34,9 +34,21 @@ A modern chat application powered by OpenAI's GPT models, built with React, Type
 ### Prerequisites
 
 - Node.js (v14 or higher)
-- MongoDB
 - OpenAI API key
 
 ### Installation
 
 1. Clone the repository
+2. Navigate to backend directory and front end directory and install modules
+
+## Commands
+``` npm install or yarn install ```
+
+
+### Running
+
+1. Navigate to backend directory and front end directory and install modules
+
+## Commands
+
+``` npm run dev or yarn dev ```

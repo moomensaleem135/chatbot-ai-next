@@ -14,8 +14,6 @@ export const useChatLogic = () => {
   } = useChat();
 
   const sendMessage = async () => {
-
-    console.log({input})
     if (!input.trim() && !error) return;
 
     let refreshMessages,

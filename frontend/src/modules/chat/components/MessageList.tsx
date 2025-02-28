@@ -17,8 +17,6 @@ function MessageList({ messages, error, handleSend }: MessageListProps) {
     isStream: true,
   });
 
-  console.log({ typedMessage, messages });
-
   return (
     <>
       {messages.map((msg, index) => (
